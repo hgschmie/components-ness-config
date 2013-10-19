@@ -91,7 +91,9 @@ public final class Config
      */
     public static Config getFixedConfig(@Nonnull Map<String, String> config)
     {
-        return getFixedConfig(new MapConfiguration(config));
+        @SuppressWarnings({ "unchecked", "rawtypes" })
+        final Map<String, Object> props = (Map<String, Object>) (Map) config;
+        return getFixedConfig(new MapConfiguration(props));
     }
 
     /**
@@ -102,7 +104,7 @@ public final class Config
      */
     public static Config getFixedConfig(final String ... keyValuePairs)
     {
-        final ImmutableMap.Builder<String, String> builder = ImmutableMap.builder();
+        final ImmutableMap.Builder<String, Object> builder = ImmutableMap.builder();
 
         if (keyValuePairs != null) {
             for(final Iterator<String> it = Arrays.asList(keyValuePairs).iterator(); it.hasNext();) {
