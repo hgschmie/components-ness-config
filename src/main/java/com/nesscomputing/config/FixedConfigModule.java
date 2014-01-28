@@ -18,11 +18,11 @@ package com.nesscomputing.config;
 import java.util.Collections;
 import java.util.Map;
 
-import org.apache.commons.configuration.MapConfiguration;
-import org.apache.commons.configuration.SystemConfiguration;
-
 import com.google.common.collect.ImmutableMap;
 import com.google.inject.AbstractModule;
+
+import org.apache.commons.configuration.MapConfiguration;
+import org.apache.commons.configuration.SystemConfiguration;
 
 /**
  * A module which binds a Config object whose properties are defined by code.  By default, the module is empty.

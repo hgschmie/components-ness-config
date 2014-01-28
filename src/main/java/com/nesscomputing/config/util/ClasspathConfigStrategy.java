@@ -18,13 +18,13 @@ package com.nesscomputing.config.util;
 import java.net.URI;
 import java.net.URL;
 
+import com.nesscomputing.config.Config;
+
 import org.apache.commons.configuration.AbstractConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.nesscomputing.config.Config;
 
 public class ClasspathConfigStrategy extends AbstractConfigStrategy
 {

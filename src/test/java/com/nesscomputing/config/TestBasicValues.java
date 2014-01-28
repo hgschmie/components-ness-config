@@ -17,8 +17,6 @@ package com.nesscomputing.config;
 
 import org.junit.Before;
 
-import com.nesscomputing.config.Config;
-
 public class TestBasicValues extends AbstractTestConfig
 {
     @Before

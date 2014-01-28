@@ -18,16 +18,14 @@ package com.nesscomputing.config;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
-
 import java.net.URI;
+
+import com.nesscomputing.config.test.TestBean;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.nesscomputing.config.Config;
-import com.nesscomputing.config.test.TestBean;
 
 public class TestBeanValues
 {

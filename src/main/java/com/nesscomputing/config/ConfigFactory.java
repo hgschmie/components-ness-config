@@ -24,6 +24,11 @@ import javax.annotation.Nullable;
 import com.google.common.base.Objects;
 import com.google.common.collect.ImmutableMap;
 
+import com.nesscomputing.config.util.ClasspathConfigStrategy;
+import com.nesscomputing.config.util.ConfigStrategy;
+import com.nesscomputing.config.util.FileConfigStrategy;
+import com.nesscomputing.config.util.HttpConfigStrategy;
+
 import org.apache.commons.configuration.AbstractConfiguration;
 import org.apache.commons.configuration.CombinedConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
@@ -32,11 +37,6 @@ import org.apache.commons.configuration.tree.OverrideCombiner;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.nesscomputing.config.util.ClasspathConfigStrategy;
-import com.nesscomputing.config.util.ConfigStrategy;
-import com.nesscomputing.config.util.FileConfigStrategy;
-import com.nesscomputing.config.util.HttpConfigStrategy;
 
 class ConfigFactory
 {

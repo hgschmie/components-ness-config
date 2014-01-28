@@ -22,6 +22,10 @@ import java.net.URI;
 import javax.annotation.Nonnull;
 import javax.servlet.http.HttpServletResponse;
 
+import com.nesscomputing.tinyhttp.HttpContentConverter;
+import com.nesscomputing.tinyhttp.HttpFetcher;
+import com.nesscomputing.tinyhttp.ssl.SSLConfig;
+
 import org.apache.commons.configuration.AbstractConfiguration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
@@ -32,10 +36,6 @@ import org.skife.config.CommonsConfigSource;
 import org.skife.config.ConfigurationObjectFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.nesscomputing.tinyhttp.HttpContentConverter;
-import com.nesscomputing.tinyhttp.HttpFetcher;
-import com.nesscomputing.tinyhttp.ssl.SSLConfig;
 
 public class HttpConfigStrategy extends AbstractConfigStrategy
 {

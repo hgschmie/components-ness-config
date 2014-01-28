@@ -18,14 +18,12 @@ package com.nesscomputing.config;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.notNullValue;
 
+import com.nesscomputing.config.test.DatabaseBean;
 
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.nesscomputing.config.Config;
-import com.nesscomputing.config.test.DatabaseBean;
 
 public class TestSubConfiguration
 {

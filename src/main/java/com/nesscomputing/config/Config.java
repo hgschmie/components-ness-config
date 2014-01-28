@@ -29,6 +29,8 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;
 
+import com.nesscomputing.config.util.ImmutableConfiguration;
+
 import org.apache.commons.configuration.AbstractConfiguration;
 import org.apache.commons.configuration.CombinedConfiguration;
 import org.apache.commons.configuration.Configuration;
@@ -39,8 +41,6 @@ import org.skife.config.CommonsConfigSource;
 import org.skife.config.ConfigurationObjectFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import com.nesscomputing.config.util.ImmutableConfiguration;
 
 /**
  * Load configurations from a hierarchy of configuration files. A hierarchy is defined as "a/b/c/d/..." more local

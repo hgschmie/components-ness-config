@@ -15,12 +15,12 @@
  */
 package com.nesscomputing.config;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 public class ConfigProviderTest {
 

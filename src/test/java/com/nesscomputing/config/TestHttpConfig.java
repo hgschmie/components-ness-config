@@ -19,13 +19,13 @@ package com.nesscomputing.config;
 import java.io.IOException;
 import java.net.URI;
 
+import com.nesscomputing.config.util.LocalHttpService;
+
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.util.resource.Resource;
 import org.junit.After;
 import org.junit.Before;
-
-import com.nesscomputing.config.util.LocalHttpService;
-import com.nesscomputing.testing.lessio.AllowNetworkAccess;
+import org.kitei.testing.lessio.AllowNetworkAccess;
 
 @AllowNetworkAccess(endpoints={"127.0.0.1:*"})
 public class TestHttpConfig extends AbstractTestConfig

@@ -25,8 +25,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.nesscomputing.config.Config;
-
 public class TestOverrideValues
 {
     private Config cfg = null;

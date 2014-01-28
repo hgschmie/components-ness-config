@@ -19,18 +19,17 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import com.google.common.io.Files;
+import com.google.common.io.InputSupplier;
+import com.google.common.io.Resources;
+
 import org.apache.commons.io.FileUtils;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.kitei.testing.lessio.AllowTmpDirAccess;
 
-import com.google.common.io.Files;
-import com.google.common.io.InputSupplier;
-import com.google.common.io.Resources;
-import com.nesscomputing.config.Config;
-import com.nesscomputing.testing.lessio.AllowLocalFileAccess;
-
-@AllowLocalFileAccess(paths={"*/test-config/*","%TMP_DIR%"})
+@AllowTmpDirAccess
 public class TestFileTrumpetConfig extends AbstractTestConfig
 {
     File dir = null;
@@ -64,7 +63,7 @@ public class TestFileTrumpetConfig extends AbstractTestConfig
     }
 
     /**
-     * The {@link File#mkdirs()} method calls {@link File#getCanonicalFile()} on its target.  On Mac OS X
+     * The {@link File#mkdirs} method calls {@link File#getCanonicalFile} on its target.  On Mac OS X
      * <code>/tmp</code> is a symlink into <code>/var/folders</code> which is itself a symlink into
      * <code>/private/var/folders</code>.  For technical reasons, the <code>LessIOSecurityManager</code> does not
      * handle symlinks well.  So we replicate the functionality here without the file canonicalization

@@ -18,15 +18,15 @@ package com.nesscomputing.config;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
+import com.google.inject.AbstractModule;
+import com.google.inject.Guice;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.skife.config.Default;
 import org.skife.config.TimeSpan;
 import org.weakref.jmx.testing.TestingMBeanServer;
-
-import com.google.inject.AbstractModule;
-import com.google.inject.Guice;
 
 public class JmxExporterTest
 {
